@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <style>
+
+        body {
+            background-color: gray;
+        }
+
+        div {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <h1>Manipulando DOM</h1>
+
+        <p>Aqui vai o <strong>resultado</strong></p>
+
+        <p>Aprendendo usar <strong>DOM</strong></p>
+
+    </div>
+
+    <div>
+        Clique aqui
+    </div>
+
+    <script>
+        
+        //   window.document.write (window.document.URL) mostra url do site
+
+        
+        var p = window.document.getElementsByTagName('p')[0]
+        
+        window.document.write('Está escrito assim: ' + p.innerText)
+
+        p.style.color = 'blue'
+        
+        //    document.write(p.innerText)
+        //    window.alert(p.innerText)
+
+    </script>
+
+</body>
+</html>
