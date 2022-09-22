@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Javascript</title>
+</head>
+
+<style>
+    
+    #area {
+        background-color: gray;
+        color: black;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+    
+<div id="area" onclick="clicar()" onmouseenter="entrar()">
+    Clique aqui.
+</div>
+
+<script>
+
+    var a = window.document.getElementById('area')
+
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseneter', entrar)
+    a.addEventListener('mouseout', sair)
+
+    function clicar() {
+        //var a = window.document.getElementById('area')
+        //aqui só serviria para esta função
+        a.innerText = 'Até que fim'
+        a.style.background = 'black'
+        a.style.color = 'white'
+    }
+
+    function entrar() {
+        a.innerText = 'Clica logo'
+        a.style.background = 'gray'
+    }
+
+    function sair() {
+        a.innerText = 'Saiu'
+    }
+
+</script>
+
+</body>
+</html>

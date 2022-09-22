@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Javascript</title>
+</head>
+
+<style>
+
+    body {
+        font: normal 18px arial;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .formulario {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .res {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    
+
+</style>
+
+<body>
+    
+    <h1>Somando valores</h1>
+
+    <div class="formulario">
+        <input type="number" name="texto1" id="texto1"> +
+        <input type="number" name="texto2" id="texto2">
+        <input type="button" value="Somar" onclick="somar()">
+    </div>
+
+    <div class="res" id="res">Resultado</div>
+
+    <script>
+
+        function somar() {
+        var txt1 = window.document.getElementById('texto1')
+        var txt2 = window.document.querySelector('input#texto2')
+        var res = window.document.getElementById('res')
+        
+        var a = Number(txt1.value)
+        var b = Number(txt2.value)
+        var c = a + b
+        res.innerHTML = `Resultado: ${a} + ${b} = ${c}`
+        }
+
+    </script>
+
+</body>
+</html>
