@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(190, 190, 190);
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+</style>
+
+<body>
+    
+    <h1>
+        Início básico de javascript
+    </h1>
+
+    <script>
+
+        window.alert ('Minha primeira Mensagem') // aviso com o conteúdo .alert
+        window.confirm ('Gostando?') // Ok or cancel .confirm
+        
+        var idade = window.prompt('Qual a sua idade?') // criar variáveis, também se usa --> let
+        var nome = window.prompt('Diga seu nome') // caixa de diálogo .prompt
+        window.alert ('Bem vindo ' + nome + '!') // + de contatenação
+
+        document.write(`Você tem ${idade} anos, seu nome tem ${nome.length} letras que `)
+        document.write(` em maiusculas fica assim: ${nome.toUpperCase()}`)
+        document.write(`, em minusculas fica assim: ${nome.toLocaleLowerCase()}`)
+
+        // comandando que computador escreva .write
+        // Recomendado para formatação de strings, melhor que concatenar o código inteiro ${}
+        // Fornece o número de argumentos que foram realmente passados .length
+        // Transforma em maiúsculas .toUpperCase
+        // Transforma em minúsculas .topLocaleLowerCase
+        // deixa comentário em apenas uma linha --> " // " 
+        // Para deixar comentários igual Css use /* */
+        // Se usa três tipos de aspas, simples, duplas e crases. ''  " "  ``
+
+
+    
+    </script>
+
+</body>
+</html>

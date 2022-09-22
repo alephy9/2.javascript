@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(190, 190, 190);
+    }
+
+    h1 {
+        text-align: center;
+    }
+    
+</style>
+
+<body>
+    
+    <h1>
+        Olá, javascript.
+    </h1>
+
+    <script>
+        
+        // NUMEROS APENAS INTEIROS 
+
+        var number1 = Number.parseInt(window.prompt('Primeiro numero INTEIRO')) // Exibirá somente numeros inteiros descartando todo valor após vírgulas, mesmo colocando números Reais
+
+        var number2 = Number.parseInt(window.prompt('Segundo numero INTEIRO'))  // usando --> Number.parseInt
+
+        var s = number1 + number2
+
+        window.alert ('Somando dar = ' + s)
+
+        // NUMEROS APENAS REAIS
+
+        var number1 = Number.parseFloat(window.prompt('Primeiro numero REAL')) // Exibirá números Reais, ou seja, inteiros também são incluídos
+
+        var number2 = Number.parseFloat(window.prompt('Segundo numero REAL'))  // usando --> Number.parseFloat
+
+        var s = number1 + number2
+
+        window.alert ('Somando dar = ' + s)
+
+        // NUMEROS INTEIROS OU REAIS
+
+        var number1 = Number(window.prompt('Primeiro numero INTEIRO ou REAL')) // Exibe toda base que conter números, tanto Inteiro quanto Reais
+
+        var number2 = Number(window.prompt('Segundo numero INTEIRO ou REAL')) // usando --> Number
+
+        var s = number1 + number2 + "+10" // sinal de + tem significado de soma quanto são Números e concatenação quando é String
+
+        window.alert ('Somando dar = ' + s)
+
+        /*
+            
+            ============ VARIÁVEIS ============
+
+            O sinal de igual, significa recebe... [[[ var a = valor ]]] variável recebe um valor
+            O sinal de igual + null, significa que fica vazio... [[[ var a = null ]]] variável ficou vazia
+            nomes de identificadores maiúsculos e minúsculos tem diferênça [[[ var a / var A ]]]
+
+            =========== TiPOS PRIMITIVOS ========
+                        
+                            Typeof
+
+            Number ( infinity / NaN ): Conjunto de números
+            Booleano: Verdadeiro ou falso
+            String: Conjunto de caracteres
+            null:
+            undefined:
+            object (Array):
+            function:
+
+            =========== CONVERTER STRING -> NUMERO =========
+
+            Number.parseInt     > inteiro
+            Number.parseFloat   > inteiro e reais
+            Number              > todos números
+
+            =========== CONVERTER NUMERO -> STRING ==========
+
+            String(numero)      ou     numero.ToString()
+
+            =========== FORMATANDO STRINGS ==================
+
+            var XXX = 'Js'
+
+            'eu sei XXX'    não faz interpolação
+            'eu sei' + XXX  usa concatenação
+            `eu sei ${XXX}` usa template string
+
+            ============ FORMATANDO NUMEROS =================
+
+            var n1 = 101.2
+
+            n1.ToFixed(2) ------> 101.20 [[[ Adiciona quantidade de 2 casas decimais ]]]
+            n1.Tofixed(2).replace('.' ; ',') ----------> 101,20 [[[ Troca o ponto pela virgula ]]]
+
+            */
+
+        
+    </script>
+
+</body>
+</html>
