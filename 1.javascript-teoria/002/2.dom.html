@@ -34,15 +34,17 @@
     var a = window.document.getElementById('area')
 
     a.addEventListener('click', clicar)
-    a.addEventListener('mouseneter', entrar)
+    a.addEventListener('mouseenter', entrar)
     a.addEventListener('mouseout', sair)
 
     function clicar() {
-        //var a = window.document.getElementById('area')
-        //aqui só serviria para esta função
-        a.innerText = 'Até que fim'
-        a.style.background = 'black'
-        a.style.color = 'white'
+
+        //colocando     ->   var a = window.document.getElementById('area')
+        //aqui só serviria para esta função clicar()
+
+        a.innerText = 'Até que fim'     // mostra uma mensagem depois que a função é ativada
+        a.style.background = 'black'    // modifica o estilo do fundo de cor da variável
+        a.style.color = 'white'         // modifica o estilo de cor da variavel
     }
 
     function entrar() {
@@ -51,7 +53,7 @@
     }
 
     function sair() {
-        a.innerText = 'Saiu'
+        a.innerText = 'Passou e não clicou'
     }
 
 </script>
