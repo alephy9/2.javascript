@@ -14,12 +14,16 @@ body {
     text-align: center;
 }
 
-.div {
-    margin: 0 auto;
+.section {
+    margin: 1rem auto;
     width: 200px;
-    background-color: rgb(209, 209, 209);
-    padding: 1rem;
+    background-color: rgba(209, 209, 209, 0.514);
+    padding: 1rem 10px;
     text-align: center;
+}
+
+.div img {
+    padding-top: 10px;
 }
 
 .footer {
